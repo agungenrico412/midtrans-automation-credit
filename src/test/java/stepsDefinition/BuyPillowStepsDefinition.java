@@ -28,10 +28,10 @@ public class BuyPillowStepsDefinition {
     @Given("^Open \"([^\"]*)\" browser and start application$")
     public void openBrowserAndStartApplication(String browser) {
         if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "/Users/agungenrico/Documents/practice/midtrans-automation-credits/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/agungenrico/Documents/practice/midtrans-automation-credit/chromedriver");
             driver = new ChromeDriver();
         } else {
-            System.setProperty("webdriver.gecko.driver", "/Users/agungenrico/Documents/practice/midtrans-automation-credits/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "/Users/agungenrico/Documents/practice/midtrans-automation-credit/geckodriver");
             driver = new FirefoxDriver();
         }
 
