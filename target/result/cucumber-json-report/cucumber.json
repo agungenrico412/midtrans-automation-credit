@@ -1,0 +1,534 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 28,
+        "name": "Buy pillow with credit card both success and declined card",
+        "description": "",
+        "id": "user-buy-pillow-with-credit-card;buy-pillow-with-credit-card-both-success-and-declined-card;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3394234370,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"chrome\" browser and start application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 6
+                }
+              ],
+              "location": "BuyPillowStepsDefinition.openBrowserAndStartApplication(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 81881078,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click buy now button",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iClickBuyNowButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116908373,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see Shopping Cart details",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iShouldSeeShoppingCartDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1176290860,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input the customer details",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputTheCustomerDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61483993,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I press checkout",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iPressCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1178615572,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see order summary popup",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iShouldSeeOrderSummaryPopup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 172597950,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I get the right shipping details",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iGetTheRightShippingDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99643440,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click continue button",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iClickContinueButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 675637471,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I picked Credit Card as payment method",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iPickedCreditCardAsPaymentMethod()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78520314,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I get the right amount to pay",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iGetTheRightAmoutToPay()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 200351463,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I input card number",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputCardNumber(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cardNumber",
+                  "4811 1111 1111 1114"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111498995,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I input expiry date and cvv",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputExpiryDateAndCvv()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88734360,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on pay now button",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iClickOnPayNowButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2802552805,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am on input token form",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iAmOnInputTokenForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87430407,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input BANK OTP",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputBANKOTP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 551780415,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I press OK",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iPressOK()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5311327808,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see transaction status",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iShouldSeeTransaction(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "status",
+                  "success"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107627139,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I close the browser",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iCloseTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@midtrans-store"
+          },
+          {
+            "name": "@buy-pillow"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Buy pillow with credit card both success and declined card",
+        "description": "",
+        "id": "user-buy-pillow-with-credit-card;buy-pillow-with-credit-card-both-success-and-declined-card;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3057838313,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"chrome\" browser and start application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 6
+                }
+              ],
+              "location": "BuyPillowStepsDefinition.openBrowserAndStartApplication(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 63285235,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click buy now button",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iClickBuyNowButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51637453,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see Shopping Cart details",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iShouldSeeShoppingCartDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1225599688,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input the customer details",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputTheCustomerDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51975521,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I press checkout",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iPressCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1157579675,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see order summary popup",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iShouldSeeOrderSummaryPopup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 159487401,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I get the right shipping details",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iGetTheRightShippingDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 116426637,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click continue button",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iClickContinueButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 669566624,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I picked Credit Card as payment method",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iPickedCreditCardAsPaymentMethod()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64606467,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I get the right amount to pay",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iGetTheRightAmoutToPay()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 205505404,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I input card number",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputCardNumber(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cardNumber",
+                  "4911 1111 1111 1113"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114275136,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I input expiry date and cvv",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputExpiryDateAndCvv()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82020050,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on pay now button",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iClickOnPayNowButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4980008747,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am on input token form",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iAmOnInputTokenForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77695641,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I input BANK OTP",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iInputBANKOTP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 589081950,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I press OK",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iPressOK()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 685087626,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see transaction status",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iShouldSeeTransaction(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "status",
+                  "failed"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 84620860,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I close the browser",
+            "match": {
+              "location": "BuyPillowStepsDefinition.iCloseTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@midtrans-store"
+          },
+          {
+            "name": "@buy-pillow"
+          }
+        ]
+      }
+    ],
+    "name": "User buy pillow with credit card",
+    "description": "",
+    "id": "user-buy-pillow-with-credit-card",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/buy_pillow.feature",
+    "tags": [
+      {
+        "name": "@midtrans-store",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

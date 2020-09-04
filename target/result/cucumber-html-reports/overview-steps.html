@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>midtrans-pillow-store</td>
+        <td>1</td>
+      <td>29 Feb 2020, 22:34</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iAmOnInputTokenForm()</td>
+              <td>2</td>
+              <td class="duration" data-value="3891280776">3.891</td>
+              <td class="duration" data-value="3891280776">4.980</td>
+              <td class="duration" data-value="7782561552">7.782</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iClickBuyNowButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="72583156">0.072</td>
+              <td class="duration" data-value="72583156">0.081</td>
+              <td class="duration" data-value="145166313">0.145</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iClickContinueButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="108035038">0.108</td>
+              <td class="duration" data-value="108035038">0.116</td>
+              <td class="duration" data-value="216070077">0.216</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iClickOnPayNowButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="85377205">0.085</td>
+              <td class="duration" data-value="85377205">0.088</td>
+              <td class="duration" data-value="170754410">0.170</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iCloseTheBrowser()</td>
+              <td>2</td>
+              <td class="duration" data-value="96123999">0.096</td>
+              <td class="duration" data-value="96123999">0.107</td>
+              <td class="duration" data-value="192247999">0.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iGetTheRightAmoutToPay()</td>
+              <td>2</td>
+              <td class="duration" data-value="71563390">0.071</td>
+              <td class="duration" data-value="71563390">0.078</td>
+              <td class="duration" data-value="143126781">0.143</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iGetTheRightShippingDetails()</td>
+              <td>2</td>
+              <td class="duration" data-value="166042675">0.166</td>
+              <td class="duration" data-value="166042675">0.172</td>
+              <td class="duration" data-value="332085351">0.332</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iInputBANKOTP()</td>
+              <td>2</td>
+              <td class="duration" data-value="82563024">0.082</td>
+              <td class="duration" data-value="82563024">0.087</td>
+              <td class="duration" data-value="165126048">0.165</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iInputCardNumber(DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="202928433">0.202</td>
+              <td class="duration" data-value="202928433">0.205</td>
+              <td class="duration" data-value="405856867">0.405</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iInputExpiryDateAndCvv()</td>
+              <td>2</td>
+              <td class="duration" data-value="112887065">0.112</td>
+              <td class="duration" data-value="112887065">0.114</td>
+              <td class="duration" data-value="225774131">0.225</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iInputTheCustomerDetails()</td>
+              <td>2</td>
+              <td class="duration" data-value="1200945274">1.200</td>
+              <td class="duration" data-value="1200945274">1.225</td>
+              <td class="duration" data-value="2401890548">2.401</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iPickedCreditCardAsPaymentMethod()</td>
+              <td>2</td>
+              <td class="duration" data-value="672602047">0.672</td>
+              <td class="duration" data-value="672602047">0.675</td>
+              <td class="duration" data-value="1345204095">1.345</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iPressCheckout()</td>
+              <td>2</td>
+              <td class="duration" data-value="56729757">0.056</td>
+              <td class="duration" data-value="56729757">0.061</td>
+              <td class="duration" data-value="113459514">0.113</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iPressOK()</td>
+              <td>2</td>
+              <td class="duration" data-value="570431182">0.570</td>
+              <td class="duration" data-value="570431182">0.589</td>
+              <td class="duration" data-value="1140862365">1.140</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iShouldSeeOrderSummaryPopup()</td>
+              <td>2</td>
+              <td class="duration" data-value="1168097623">1.168</td>
+              <td class="duration" data-value="1168097623">1.178</td>
+              <td class="duration" data-value="2336195247">2.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iShouldSeeShoppingCartDetails()</td>
+              <td>2</td>
+              <td class="duration" data-value="84272913">0.084</td>
+              <td class="duration" data-value="84272913">0.116</td>
+              <td class="duration" data-value="168545826">0.168</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.iShouldSeeTransaction(DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="2998207717">2.998</td>
+              <td class="duration" data-value="2998207717">5.311</td>
+              <td class="duration" data-value="5996415434">5.996</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">BuyPillowStepsDefinition.openBrowserAndStartApplication(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3226036341">3.226</td>
+              <td class="duration" data-value="3226036341">3.394</td>
+              <td class="duration" data-value="6452072683">6.452</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>36</td>
+            <td class="duration">0.825</td>
+            <td class="duration">7.782</td>
+            <td class="duration">29.733</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
